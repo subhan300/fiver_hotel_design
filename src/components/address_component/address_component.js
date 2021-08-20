@@ -19,8 +19,10 @@ function address_component() {
                  </div>
             </div>
 
-            <div className="space_height lineStar">
-                  g
+            <div className="space_height lineStar  address_container">
+                <div className="col-hr">  <hr className="line_hr"></hr></div>
+                 <div className="col-hr star_img_div"> <div className="star_img" ></div></div>
+                 <div className="col-hr"> <hr className="line_hr-2"></hr></div>
             </div>
 
         </div>

@@ -9,7 +9,7 @@ import Navbar from '../components/Global-components/Navbar'
 import Banner from '../components/Home-screen/Banner'
 import BannerSub from '../components/Home-screen/BannerSub'
 
-
+import Lepasta from "../components/lepasta_component/Lepasta_Component"
 function index() {
   return (
     <div>
@@ -20,6 +20,7 @@ function index() {
         cname="reverse_row"
       /> */}
       <Address_component />
+      <Lepasta />
     </div>
   )
 }
