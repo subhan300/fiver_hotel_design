@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Global-comp-styles/index.css'
 import '../styles/Home-comp-styles/BannerSub.css'
-
+import Address_component from "../components/address_component/address_component" 
 // global components
 import Navbar from '../components/Global-components/Navbar'
 
@@ -13,12 +13,13 @@ import BannerSub from '../components/Home-screen/BannerSub'
 function index() {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/>
       <Banner/>
       <BannerSub/>
       <BannerSub
         cname="reverse_row"
-      />
+      /> */}
+      <Address_component />
     </div>
   )
 }
