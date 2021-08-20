@@ -24,6 +24,7 @@
 .section_rightBx div h1 {
     font-family: insta;
     padding-bottom: 10px;
+    white-space: pre-wrap;
 }
 .section_rightBx div p {
     font-size: 20px;
@@ -37,7 +38,7 @@
     text-align: center;
     align-items: center;
     margin-top: 60px;
-    padding: 0 300px;
+    padding: 0 65px;
     position: relative;
 }
 .section_bottom h1 {

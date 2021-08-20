@@ -7,33 +7,30 @@ import bottomImage from '../../assets/images/IMG_6118 1.png'
 
 
 function BannerSub(props) {
+    const text = props.mainh1;
+    const newText = text.split('\n').map(str => <>{str}</>)
     return (
         <>
-        <div className={`section ${props.cname}`}>
-            <div className="sectionBx">
+        <div className="section">
+            <div className={`sectionBx ${props.cname}`}>
                 <div className="section_leftBx">
-                    <img src={subBanner} alt="" />
+                    <img src={props.banner} alt="" />
                 </div>
-                <div className="section_rightBx">
+                <div className={`section_rightBx`}>
                     <div>
                         <h1>
-                            Cucina Verace - <br/>
-                            True Italian Cuisine
+                            {newText}
                         </h1>
                         <p>
-                            La Stella represents more than just a restaurant concept.
-                            It is an immersive and truly authentic - verace - Italian
-                            dining experience comprised of immense passion and creativity.
+                            {props.para}
                         </p>
                     </div>
                 </div>
             </div>
             <div className="section_bottom">
-                <h1>La Stella - The Star amongst stars</h1>
+                <h1> {props.secBottomh1} </h1>
                 <p>
-                    Our name represents a promise to ourselves and to 
-                    our customers.  We set the benchmark for the finest 
-                    Italian dining experience in North Texas.
+                    {props.secBottomText}
                 </p>
             </div>
             <div className="vector">
@@ -41,7 +38,7 @@ function BannerSub(props) {
             </div>
         </div>
         <div className="bottom_image">
-            <img src={bottomImage} alt="" />
+            <img src={props.lowerImage} alt="" />
         </div>
         </>
     )

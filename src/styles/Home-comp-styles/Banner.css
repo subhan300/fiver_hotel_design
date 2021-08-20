@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+   
     position: absolute;
 }
 
@@ -18,23 +19,26 @@
 
 .banner{
     position: relative;
+    
+    
 }
-
 .banner {
     width: 100%;
     height: 760px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    /* background-color: #000; */
+   
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: #000;
+    opacity: .5; */
 }
 .banner_contentBx {
     width: 612px;
     height: 240px;
-    z-index: 1;
+  
 }
 .banner_contentBx h1 {
     color: #fff;
