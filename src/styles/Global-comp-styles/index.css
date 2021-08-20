@@ -1,0 +1,10 @@
+@font-face {
+    font-family: insta;
+    src: url(../../assets/fonts/Insta\ Story\ -\ TTF.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
