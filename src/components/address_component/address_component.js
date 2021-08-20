@@ -19,6 +19,10 @@ function address_component() {
                  </div>
             </div>
 
+            <div className="space_height lineStar">
+                  g
+            </div>
+
         </div>
     )
 }

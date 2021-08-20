@@ -92,6 +92,10 @@ text-transform: uppercase;
 
 }
 
+.space_height{
+    margin-top: 4rem;
+    color: red;
+}
 
 @media screen and (max-width:800px) {
     .address_container{
