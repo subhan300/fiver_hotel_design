@@ -1,0 +1,22 @@
+.root_section2{
+    margin-top: 3rem;
+}
+
+.root_section2_container,.root_section2_container_content{
+    width: 80% !important;
+}
+
+.root_section2_img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.vector_root_1{
+    position: absolute;
+    /* border:2px solid blue; */
+    right: 0;
+}
+
+

@@ -1,0 +1,46 @@
+
+.root{
+    margin-top:4rem;
+}
+
+.root_container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.root_container_content_title{
+    font-family:insta;
+font-size: 44px;
+font-style: normal;
+font-weight: 400;
+line-height: 100px;
+letter-spacing: 0em;
+text-align: center;
+margin-top: 10px;
+
+}
+
+.root_container_content_text{
+    font-family: Calibri;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+color: #8C8B92;
+
+}
+
+
+@media only screen and (max-width: 570px) {
+ .root_container_content_title{ 
+     font-size: 30px;
+     line-height: 60px;
+    
+    }
+    .root_container_content_text{
+        font-size: 18px;
+    }
+   
+}

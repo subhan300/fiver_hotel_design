@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.menu_sections{
+    margin-top:4rem;
+ }
+
+ .menu_sections_container{
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ .menu_sections_container_content{
+     width: 100%;
+     /* height: 30vh; */
+ }
+
+
+ .form_menu{
+   
+     width: 100%;
+ }
+
+ .form_field{
+     border:1px solid #DEA11B;
+     margin-top: 4rem;
+ }
+
+ .legend_content{
+     display: flex;
+     /* border: 2px solid red; */
+     padding: 1rem;
+     margin-top: 1rem;
+ }
+ .legend{
+  color: #DEA11B;
+  font-family:insta;
+font-size: 44px;
+font-style: normal;
+font-weight: 400;
+line-height: 70px;
+letter-spacing: 0em;
+text-align: left;
+
+
+ }
+ .legend_content_col-1{
+     width:60%;
+     /* border: 2px solid green; */
+
+align-self: center;
+
+ }
+ .legend_content_col-1_text{
+    font-family: Calibri;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 8px;
+   
+ }
+.legend_content_col-1_text2{
+    font-family: Calibri;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 26px; */
+    letter-spacing: 0em;
+    text-align: left;
+    
+    
+ }
+ .legend_content_col-2{
+     width: 35%;
+     height: 2px;
+     align-self: center;
+     background-color:#8C8B92;
+     
+ }
+ .legend_content_col-3{
+     width: 5%;
+     /* border: 2px solid green; */
+     align-self: center;
+     text-align: center;
+     font-family: Calibri;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: right;
+color: #DEA11B;
+
+
+ }
+
+ .vector_side-1,.vector_side-3,.vector_side-5{
+     /* border:2px solid green; */
+     position: absolute;
+     right: 0;
+     margin-top:1rem;
+     
+     
+}
+.vector_side_img{
+    width: 100%;
+    height: 100px;
+}
+.vector_side-2,.vector_side-4{
+    /* border:2px solid green; */
+    position: absolute;
+    left: 0;
+    margin-top:1rem;
+}
+
+
+ @media only screen and (max-width: 570px) {
+    .legend_content_col-1_text{
+        font-size: 16px;
+        /* line-height: 25px; */
+    }
+  }

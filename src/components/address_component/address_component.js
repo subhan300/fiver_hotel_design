@@ -18,7 +18,7 @@ function address_component() {
                       <button className="address_content_reserveBtn">Reserve</button>
                  </div>
             </div>
-
+       <br></br>
             <div className="space_height lineStar  address_container">
                 <div className="col-hr">  <hr className="line_hr"></hr></div>
                  <div className="col-hr star_img_div"> <div className="star_img" ></div></div>

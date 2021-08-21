@@ -16,13 +16,15 @@ import subBanner2 from "../assets/images/IMG_6113 1.png"
 import bottomImage2 from '../assets/images/IMG_6113 1.png'
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component" 
+import {graphql} from "gatsby"
 
 
-function index() {
+function index({data}) {
+  console.log("data",data.allContentfulHomePage.nodes)
   return (
     <div>
       <Navbar/>
-      <Banner/>
+      <Banner banner_title="Raggiungi le stelle - reach for the stars" />
       <BannerSub
         banner={subBanner}
         mainh1=
@@ -70,3 +72,43 @@ function index() {
 }
 
 export default index
+export const query=graphql`
+
+{
+  allContentfulHomePage {
+    nodes {
+      allSectionsImages {
+        file {
+          url
+        }
+      }
+      bannerImg {
+        file {
+          url
+        }
+      }
+      bannerTitle
+      section1Title
+      section1Para {
+        section1Para
+      }
+      section2Title
+      section3Title
+      section3Para
+      section4Para
+      section4Title
+      section5ShortText {
+        section5ShortText
+      }
+      section5ShortText3
+      section5Title
+      section5bShortText2
+      section5bShortText3
+      section5bText2b
+      section5bText3b
+      section5bTitle
+      seection5ShortText2
+    }
+  }
+}
+`
