@@ -9,7 +9,7 @@ function menu() {
     return (
         <div className="menu">
               
-              <Menu_banner banner_title="MENU" />
+              <Menu_banner banner_title="Menu" />
 
               <div className="menu_container">
                     
