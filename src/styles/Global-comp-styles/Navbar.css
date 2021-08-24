@@ -1,25 +1,30 @@
+html {
+    font-size: 62.5%;
+}
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 7rem;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 0px;
+    padding: .3rem 0rem;
     z-index: 100;
 }
 .navbar .logo {
-    width: 108px;
-    height: 54px;
-    margin-left: 215px;
+    width: 10.8rem;
+    height: 5.4rem;
+    margin-left: 21.5rem;
 }
 .navbar .logo img {
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
 .nav__links ul {
     display: flex;
@@ -28,29 +33,36 @@
 .nav__links ul li {
     position: relative;
     list-style: none;
+    cursor: pointer;
 }
 .nav__links ul li span {
     position: relative;
     display: inline-block;
-    margin: 0 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
     color: #000;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 520;
+    font-size: 1.6rem;
     font-family: Calibri;
     text-transform: uppercase;
+    cursor: pointer;
+}
+.nav__links ul li span:hover {
+    color: #dea118;
 }
 .nav__buttons button {
-    width: 120px;
-    height: 44px;
-    font-size: 16px;
+    width: 12.0rem;
+    height: 4.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     font-family: Calibri;
     text-transform: uppercase;
-    margin-left: 16px;
+    margin-left: 1.6rem;
+    cursor: pointer;
 }
 .nav__buttons button:nth-child(1) {
     background: transparent;
-    border: 2px solid #dea118;
+    border: .2rem solid #dea118;
     outline: none;
 }
 .nav__buttons button:last-child {
@@ -58,5 +70,136 @@
     color: #fff;
     border: none;
     outline: none;
-    margin-right: 215px;
+    margin-right: 21.5rem;
+}
+.toggle {
+    display: none;
+}
+@media (max-width:1450px) {
+    .navbar .logo {
+        margin-left: 20rem;
+    }
+    .nav__links ul li span {
+        margin: 0 1.5rem;
+    }
+    .nav__buttons button:last-child {
+        margin-right: 20rem;
+    }
+}
+@media (max-width:1350px) {
+    .navbar .logo {
+        margin-left: 18rem;
+    }
+    .nav__links ul li span {
+        margin: 0 1.3rem;
+    }
+    .nav__buttons button:last-child {
+        margin-right: 18rem;
+    }
+}
+@media (max-width:1250px) {
+    .navbar .logo {
+        margin-left: 15rem;
+    }
+    .nav__links ul li span {
+        margin: 0 1.2rem;
+    }
+    .nav__buttons button:last-child {
+        margin-right: 15rem;
+    }
+}
+@media (max-width:1150px) {
+    .navbar .logo {
+        margin-left: 13rem;
+    }
+    .nav__links ul li span {
+        margin: 0 1.2rem;
+    }
+    .nav__buttons button:last-child {
+        margin-right: 13rem;
+    }
+}
+@media (max-width:1050px) {
+    .navbar .logo {
+        margin-left: 10rem;
+    }
+    .nav__links ul li span {
+        margin: 0 1.1rem;
+    }
+    .nav__buttons button:last-child {
+        margin-right: 10rem;
+    }
+}
+@media (max-width:950px) {
+    .navbar {
+        height: 6rem;
+    }
+    .navbar .logo {
+        width: 7.6rem;
+        height: 3.8rem;
+        margin-left: 7rem;
+    }
+    .nav__links ul li span {
+        margin: 0 1rem;
+    }
+    .nav__buttons button {
+        width: 10rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+    .nav__buttons button:last-child {
+        margin-right: 7rem;
+    }
+}
+
+@media (max-width:899px) {
+.nav_menu {
+    position: fixed;
+    top: 5.7rem;
+    left: 0;
+    display: block;
+    padding: 10rem 5rem;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav__links ul {
+    display: block;
+}
+.nav__links ul li {
+    margin: 2rem;
+}
+.nav__buttons {
+    margin-left: auto;
+}
+.nav__buttons button:last-child {
+    margin-right: 2rem;
+}
+.toggle {
+    border: .2rem solid #dea118;
+    display: block;
+    padding: .8rem 1.2rem;
+    margin-right: 2.6rem;
+}
+}
+
+@media (max-width:590px) {
+    .navbar .logo {
+        margin-left: 2rem;
+    }
+    .nav__buttons button {
+        width: 7rem;
+        height: 3rem;
+        font-size: 1.1rem;
+        margin-left: 1.2rem;
+    }
+    .toggle {
+        margin-right: 2rem;
+    }  
 }

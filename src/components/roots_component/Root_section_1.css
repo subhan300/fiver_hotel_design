@@ -6,6 +6,7 @@
 .root_container{
     width: 50%;
     margin: 0 auto;
+    padding:5rem
 }
 
 .root_container_content_title{
@@ -17,6 +18,8 @@ line-height: 100px;
 letter-spacing: 0em;
 text-align: center;
 margin-top: 10px;
+color:#363943;
+
 
 }
 
@@ -34,13 +37,16 @@ color: #8C8B92;
 
 
 @media only screen and (max-width: 570px) {
+    .root_container{width:98%; padding:3rem}
  .root_container_content_title{ 
-     font-size: 30px;
-     line-height: 60px;
+     font-size: 32px;
+     line-height: 55px;
     
     }
     .root_container_content_text{
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
     }
    
 }

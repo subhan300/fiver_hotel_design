@@ -13,15 +13,15 @@ function address_component() {
                       <p className="address_content_textlight">2330 Flora St #150, Dallas, TX 75201</p>
                       <br></br>
                       <h1 className="address_content_title">Hours</h1>
-                      <p className="address_content_text">Sunday - Thursday &nbsp;&nbsp;<span className="address_content_textlight">&nbsp;&nbsp;11:00am - 11:00pm</span>
+                      <p className="address_content_text">Sunday - Thursday <span className="address_content_textlight">&nbsp;&nbsp;11:00am - 11:00pm</span>
                       </p>
-                      <p className="address_content_text">Sunday - Thursday &nbsp;&nbsp;<span className="address_content_textlight">&nbsp;&nbsp;11:00am - 11:00pm</span>
+                      <p className="address_content_text">Sunday - Thursday <span className="address_content_textlight">&nbsp;&nbsp;11:00am - 11:00pm</span>
                       </p>
                     <br />
                       <button className="address_content_reserveBtn">Reserve</button>
                  </div>
             </div>
-       <br></br>
+       <br></br> < br />
             <div className="space_height lineStar  address_container">
                 <div className="col-hr">  <hr className="line_hr"></hr></div>
                  <div className="col-hr star_img_div"> <div className="star_img" ></div></div>

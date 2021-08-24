@@ -7,13 +7,7 @@ function Lepasta_Component() {
                  <div className="lepasta_container_content">
                     <h1 className="lepasta_title">C'e' Posta</h1>
                     <p className="lepasta_text">Sign up for our newsletter</p>
-                  <form>
-                
-                   <fieldset className="lepasta_emailBox_fieldset"> 
-                          <legend className="lepasta_emailBox_legend">Your email</legend>
-                           <div className="lepasta_emailBox"><p>example@email.com |</p></div>
-                 </fieldset>
-                  </form>
+                    <div className="lepasta_emailBox">example@email.com |</div>
                     <button className="lepasta_btn address_content_reserveBtn">SUBMIT</button>
                  </div>
             </div>

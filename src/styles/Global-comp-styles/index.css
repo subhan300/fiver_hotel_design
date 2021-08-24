@@ -1,6 +1,6 @@
 @font-face {
     font-family: insta;
-    src: url(../../assets/fonts/Insta\ Story\ -\ TTF.ttf);
+    src: url("../../assets/fonts/Insta\ Story\ -\ TTF.ttf");
 }
 
 * {

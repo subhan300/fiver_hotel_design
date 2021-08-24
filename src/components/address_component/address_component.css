@@ -102,7 +102,7 @@ text-transform: uppercase;
     justify-items:space-between;
 }
 .space_height{
-    margin-top: 5rem;
+    margin-top: 12rem;
     color: red;
     padding-bottom: 15px;
 }
@@ -168,3 +168,13 @@ text-transform: uppercase;
     }
 
   }
+
+
+  @media screen and (max-width:400px) {
+
+    .address_content_text{
+        font-size: 16px;
+    }
+  .address_content_textlight{
+      font-size: 15px;
+  }}

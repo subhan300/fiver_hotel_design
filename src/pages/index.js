@@ -3,33 +3,33 @@ import '../styles/Global-comp-styles/index.css'
 import '../styles/Home-comp-styles/BannerSub.css'
 
 // global components
-import Navbar from '../components/Global-components/Navbar'
+
 
 // Home screen components
 import Banner from '../components/Home-screen/Banner'
 import BannerSub from '../components/Home-screen/BannerSub'
+import OrderButton from '../components/Home-screen/OrderButton'
 
 // sub banner assets imports
 import subBanner from '../assets/images/IMG_5334 1.png'
 import bottomImage from '../assets/images/IMG_6118 1.png'
-import subBanner2 from "../assets/images/IMG_6113 1.png"
+import subBanner2 from "../assets/images/5383002 1.png"
 import bottomImage2 from '../assets/images/IMG_6113 1.png'
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
-import Address_component from "../components/address_component/address_component" 
-import {graphql} from "gatsby"
+import Address_component from "../components/address_component/address_component"
+import Navbar from '../components/Global-components/Navbar'
 
 
-function index({data}) {
-  console.log("data",data.allContentfulHomePage.nodes)
+function index() {
+  const childComponent = <OrderButton/>
   return (
     <div>
-      <Navbar/>
-      <Banner banner_title="Raggiungi le stelle - reach for the stars" />
+      <Navbar />
+      <Banner />
       <BannerSub
         banner={subBanner}
         mainh1=
-          {`Cucina Verace - \n
-          True Italian Cuisine`}
+        {`Cucina Verace - \nTrue Italian Cuisine`}
         para="
           La Stella represents more than just a restaurant concept.
           It is an immersive and truly authentic - verace - Italian
@@ -43,8 +43,7 @@ function index({data}) {
       />
       <BannerSub
         banner={subBanner2}
-        mainh1={`Le nostre origini - \n 
-          where we come from`}
+        mainh1={`Le nostre origini - \nwhere we come from`}
         para="
           Lorem ipsum dolor sit amet, consectetur adipiscing 
           elit. Malesuada interdum aenean et volutpat commodo 
@@ -61,9 +60,11 @@ function index({data}) {
           sem accumsan sit."
         lowerImage={bottomImage2}
         cname="reverse_row"
+        childComponent={childComponent}
       />
-      <br></br><br></br> <br></br><br></br>
+      <br></br>< br />
       <Address_component />
+      <br /> <br />
       <Lepasta />
 
     </div>
@@ -72,43 +73,3 @@ function index({data}) {
 }
 
 export default index
-export const query=graphql`
-
-{
-  allContentfulHomePage {
-    nodes {
-      allSectionsImages {
-        file {
-          url
-        }
-      }
-      bannerImg {
-        file {
-          url
-        }
-      }
-      bannerTitle
-      section1Title
-      section1Para {
-        section1Para
-      }
-      section2Title
-      section3Title
-      section3Para
-      section4Para
-      section4Title
-      section5ShortText {
-        section5ShortText
-      }
-      section5ShortText3
-      section5Title
-      section5bShortText2
-      section5bShortText3
-      section5bText2b
-      section5bText3b
-      section5bTitle
-      seection5ShortText2
-    }
-  }
-}
-`
