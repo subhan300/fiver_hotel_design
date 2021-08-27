@@ -1,34 +1,28 @@
 import React from 'react'
 import "./Root_section_3.css"
 import RootBanner from "../../../../assets/images/root_section3_banner.png"
-function Root_section_3() {
+import Banner from '../../banner/Banner'
+function Root_section_3({banner,gallery,title}) {
+    
     return (
         <div className="root_section3 ">
-            <h1 className="root_section3_title">La Squadra</h1>
+            <h1 className="root_section3_title">{title}</h1>
             <div className="root_section3_container ">
-                  <div className="root_section3_container_col root_section3_container_col-1 ">
-                      <img className="root_section3_img" src="https://c8.alamy.com/comp/MB6YT5/cook-chef-logo-or-label-restaurant-concept-cartoon-vector-illustration-MB6YT5.jpg"></img>
-                     <div className="root_section3_content">
-                         <h1>Riccardo Ravaglia</h1>
-                         <p>Our name represents a promise to ourselves and to our customers.</p>
-                     </div>
-                  </div>
-
-                  <div className="root_section3_container_col root_section3_container_col-2 ">
-                      <img className="root_section3_img" src="https://c8.alamy.com/comp/MB6YT5/cook-chef-logo-or-label-restaurant-concept-cartoon-vector-illustration-MB6YT5.jpg"></img>
-                      <div className="root_section3_content">
-                      <h1>John Dal Canton</h1>
-                      <p>Our name represents a promise to ourselves and to our customers.</p>
-                      </div>
-                  </div>
-
-                  <div className="root_section3_container_col root_section3_container_col-3 ">
-                       <img className="root_section3_img" src="https://c8.alamy.com/comp/MB6YT5/cook-chef-logo-or-label-restaurant-concept-cartoon-vector-illustration-MB6YT5.jpg"></img>
+                {gallery.map(val=>{
+                   
+                    return(
+                        <div className="root_section3_container_col root_section3_container_col-1 ">
+                        <img className="root_section3_img" src={val.file.url}></img>
                        <div className="root_section3_content">
-                           <h1>Giuseppe JP Piccinini</h1>
-                           <p>Our name represents a promise to ourselves and to our customers.</p>
-                      </div>
-                  </div>
+                    <h1>{val.title}</h1>
+                    <p>{val.description}</p>
+                       </div>
+                    </div>
+
+                    )
+                })}
+                
+
             </div>
 
 
@@ -51,11 +45,12 @@ function Root_section_3() {
 
 
 
-    <div className="root_section3_banner  ">
+    {/* <div className="root_section3_banner  ">
         <img className="root_section3_banner_img" src={RootBanner}></img>
        
-    </div>
-
+    </div> */}
+    <br /><br /><br /><br /><br /><br /><br />
+   <Banner banner={banner}  />
 
 
 

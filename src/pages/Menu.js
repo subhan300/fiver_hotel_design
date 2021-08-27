@@ -8,22 +8,24 @@ import LepastaComponent from "../components/lepasta_component/Lepasta_Component"
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component"
 import Navbar from '../components/Global-components/Navbar'
+import Footer from "../components/Global-components/Footer"
 function menu() {
     return (
         <div className="menu">
               <Navbar />
               <Menu_banner banner_title="Menu" />
 
-              <div className="menu_container">
+               <div className="menu_container">
                     
                     <Menu_Sections />
                    
                     <AddressComponent />
                     <LepastaComponent />
+                    <Footer />
                 
-              </div>
+               </div>
             
-        </div>
+      </div>
     )
 }
 

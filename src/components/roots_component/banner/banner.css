@@ -1,28 +1,18 @@
 
-.menu_banner::after{
-    content:"";
-    background-image:linear-gradient(to bottom, rgb(0,0,0,0.6), rgb(0,0,0,0.3)),url('../../../assets/images/menu_banner.png');
+
+.general_banner{
+    /* border:2px solid black; */
+    /* background-image: */
     width: 100%;
     height: 100%;
-    opacity: .9;
+    opacity: 1;
      background-size: cover;
      background-position: center center ;
-    top: 0;
+    /* top: 0;
     left: 0;
-    z-index: -1;
-    position: absolute;
-}
-
-
-   
-
-.menu_banner{
-    position: relative;
-}
-
-.menu_banner{
-    /* border:2px solid black; */
-    padding:140px;
+    */
+    /* position: absolute; */
+    padding:180px;
     display: flex;
     align-items: center !important;
     justify-content: center;
@@ -37,7 +27,7 @@
 
 }
 
-.menu_banner_container{
+.general_banner_container{
     
     /* width: 50%; */
     /* margin: 0 auto; */
@@ -64,7 +54,7 @@
 }
 
 @media screen and (min-width:450px) {
-    .menu_banner_container{
+    .general_banner_container{
         font-size: 30px !important;
     }
   }

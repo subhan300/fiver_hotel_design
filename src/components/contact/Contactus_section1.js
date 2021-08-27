@@ -5,15 +5,15 @@ import "./Contact_section1.css"
 import Vector_2 from "../../assets/images/Vector-2.png"
 import Vector_3 from "../../assets/images/Vector-3.png"
 
-function Contactus_section1() {
+function Contactus_section1({title,text}) {
     return (
         <div className="contact_us ">
              <div className="contact_us_container ">
                   <div className="contact_us_container_section1 ">
 
 
-                        <h1 className="contact_us_container_section1_title">Drop us a Note</h1>
-                        <p className="contact_us_container_section1_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h1 className="contact_us_container_section1_title">{title}</h1>
+    <p className="contact_us_container_section1_text">{text}</p>
                         <div className="container_section1_row">
 
                                <div className="container_section1_col ">
